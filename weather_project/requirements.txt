@@ -1,0 +1,6 @@
+Django
+djangorestframework
+requests
+aiohttp
+gunicorn
+pytest
