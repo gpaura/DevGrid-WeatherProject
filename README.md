@@ -1,6 +1,6 @@
-#DevGrid Weather Project
+# DevGrid Weather Project
 
-##Introduction
+## Introduction
 The DevGrid Weather Project is an application designed to collect and display real-time weather data. The project leverages modern technologies and best practices to ensure performance and scalability.
 
 - Technologies Used
