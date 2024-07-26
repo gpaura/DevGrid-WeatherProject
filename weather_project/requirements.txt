@@ -3,4 +3,5 @@ djangorestframework
 requests
 aiohttp
 gunicorn
-pytest
+psycopg2-binary
+dj-database-url

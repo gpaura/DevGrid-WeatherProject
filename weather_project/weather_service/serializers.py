@@ -1,4 +1,7 @@
 from rest_framework import serializers
+from .models import WeatherData
 
-class WeatherRequestSerializer(serializers.Serializer):
-    id = serializers.CharField(max_length=100)
+class WeatherDataSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = WeatherData
+        fields = '__all__'

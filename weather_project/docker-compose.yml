@@ -1,0 +1,29 @@
+services:
+  web:
+    build: .
+    command: gunicorn weather_project.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE=weather_project.settings
+      - OPEN_WEATHER_API_KEY=1fcb5dc56a4c1c5ea4778164edddbffe
+    depends_on:
+      - db
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    networks:
+      - default
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+
+volumes:
+  postgres_data:
