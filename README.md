@@ -3,9 +3,7 @@
 ## Introduction
 The DevGrid Weather Project is an application designed to collect and display real-time weather data. The project leverages modern technologies and best practices to ensure performance and scalability.
 
-Technologies Used
-Django
-Django was chosen as the framework for this application due to the following reasons:
+Technologies: Django was chosen as the framework for this application due to the following reasons:
 
 - Rapid Development: Django is known for its ability to accelerate web application development with its "batteries-included" approach and a rich library of ready-to-use components.
 Security: Django offers various security features such as protection against CSRF, SQL Injection, and XSS, which helps build more secure applications.
